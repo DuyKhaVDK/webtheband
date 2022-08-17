@@ -175,14 +175,64 @@ font-size: 14px;
     line-height: 46px;  
 }
 
-#slider{
+#slider1{
     position: relative;
     margin-top: 46px;
     padding-top: 50%; 
     /* 50% của chính nó (rộng =50%dài)  */
     background: url('../img/slider/slider1.jpg') top center / cover no-repeat; 
 }
-#slider .text-content{
+#slider2{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%; 
+    /* 50% của chính nó (rộng =50%dài)  */
+    background: url('../img/slider/slider2.jpg') top center / cover no-repeat; 
+}
+#slider3{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%; 
+    /* 50% của chính nó (rộng =50%dài)  */
+    background: url('../img/slider/slider3.jpg') top center / cover no-repeat; 
+}
+/* thêm chuyển slider */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: none;
+  }
+  .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  .mySlides {
+    display: none;
+    }
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+       
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+/* end thêm chuyển slider */
+#slider1 .text-content,
+#slider2 .text-content,
+#slider3 .text-content{
     position: absolute;
     bottom: 48px;
     left: 50%;
@@ -193,12 +243,16 @@ font-size: 14px;
    
 }
 
-#slider .text-heading{
+#slider1 .text-heading,
+#slider2 .text-heading,
+#slider3 .text-heading{
     font-weight: 500;
     font-size: 24px;
 }
 
-#slider .text-discription{
+#slider1 .text-discription,
+#slider2 .text-discription,
+#slider3 .text-discription{
     font-size: 15px;
     margin-top: 25px;
     text-shadow: 0 0 1px black;
